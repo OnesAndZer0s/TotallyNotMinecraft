@@ -1,3 +1,5 @@
+import * as B from '@babylonjs/core';
+
 var standard = {width:10, height:10, depth:10, mines:15};
 var canvas = document.getElementById("game");
 var engine = new BABYLON.Engine(canvas, true);
@@ -12,7 +14,6 @@ var camera = new BABYLON.ArcRotateCamera(
 // SET IN BOARD CREATE
 camera.attachControl(canvas, false);
 
-
 // var newLight = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0,0, 0), scene);
 // newLight.groundColor = new BABYLON.Color3(0.5, 0.5, 0.5);
 // newLight.intensity = 1;
@@ -21,7 +22,6 @@ camera.attachControl(canvas, false);
 
 engine.runRenderLoop(function () {
 	scene.render();
-  BABYLON.
 });
 
 
